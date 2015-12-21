@@ -1,0 +1,284 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.StudentInfoFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Id"
+            android:id="@+id/textViewApplicationId"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/line_below_application_id"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/textViewApplicationId"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainingImageView_studentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/line_below_application_id"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/imageViewApplicantPhoto"
+                android:layout_width="132dp"
+                android:layout_height="170dp"
+                android:src="@drawable/ic_user"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewNameOfApplicant"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Name Of Applicant"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_imageView_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutContainingImageView_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBelowNameOfApplicant_studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_linear_layout_containing_imageView_studentInfo"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="50"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="March 17th,1994"
+                android:textSize="20sp"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_date_of_birth_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutBelowNameOfApplicant_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBelowDateOfBirth_studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_linear_layout_containing_date_of_birth_studentInfo"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JEE Mains Marks"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="50"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewJeeMainsMarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="182"
+                android:textSize="20sp"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_jee_mains_marks_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutBelowDateOfBirth_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBelowJeeMainsMarks_studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_linear_layout_containing_jee_mains_marks_studentInfo"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JEE Mains Rank"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="50"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewJeeMainsRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="39,278"
+                android:textSize="20sp"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_jee_mains_rank_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutBelowJeeMainsMarks_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBelowJeeMainsRank_studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_linear_layout_containing_jee_mains_rank_studentInfo"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E Mail-ID"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="10"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ypahalajani@gmail.com"
+                android:textSize="20sp"
+                android:layout_weight="90"
+                android:gravity="right"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_email_id_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutBelowJeeMainsRank_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBelowEmailId_studentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_linear_layout_containing_email_id_studentInfo"
+            android:orientation="horizontal"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="50"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77421-73669"
+                android:textSize="20sp"
+                android:layout_weight="50"
+                android:gravity="right"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_linear_layout_containing_phone_number_studentInfo"
+            android:layout_height="6dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/linearLayoutBelowEmailId_studentInfo"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+</ScrollView>

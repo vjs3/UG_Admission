@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.FeeStatusFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textViewKindly_feeStatus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Kindly Note that"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+        <View
+            android:id="@+id/line_below_text_view_kindly_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_below="@+id/textViewKindly_feeStatus"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGuidelines_feeStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_text_view_kindly_feeStatus"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/textViewGuideline1_feeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:text="1. The fee has be submitted by"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewFeeSubmissionDate_feeStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_below="@+id/textViewGuideline1_feeStatus"
+                android:text="June 25, 2016"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+            <TextView
+                android:id="@+id/textViewGuideline2_feeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_below="@+id/textViewFeeSubmissionDate_feeStatus"
+                android:text="2. Kindly submit the fees by the specified time to avoid the fine amount ! "
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_guidelines_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_below="@+id/linearLayoutGuidelines_feeStatus"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainingDownloadButton_studentInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/line_below_guidelines_feeStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/textViewDownloadInstructions_feeStatus"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="For Further instructions, click on the button below"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+            <ImageView
+                android:id="@+id/imageViewDownloadButton_feeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_download"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_layout_containing_download_button_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_below="@+id/linearLayoutContainingDownloadButton_studentInfo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainingStatus_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/line_below_layout_containing_download_button_feeStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/textViewUpdateText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Your Fees Status Here!"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_layout_containing_update_status_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_below="@+id/linearLayoutContainingStatus_feeStatus"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutContainingCallButton_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/line_below_layout_containing_update_status_feeStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/textViewCallText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="For any other queries, feel free to contact us by clicking the call button"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_weight="80"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/imageViewCallButton_feeStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed to Payment"
+                android:layout_below="@+id/line_below_status"
+                android:layout_gravity="center"
+                android:background="@android:color/black"
+                android:src="@android:drawable/ic_menu_call"
+                android:focusable="true"
+                android:clickable="true"
+                android:paddingTop="20dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_below_layout_containing_proceed_button_feeStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_below="@+id/linearLayoutContainingCallButton_feeStatus"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</ScrollView>

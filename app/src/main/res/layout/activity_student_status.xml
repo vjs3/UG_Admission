@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vishwajeets3.loginregistration.activity.StudentStatusActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewNameOfApplicant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Name of Applicant"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_below_name_of_applicant_counsellingStatus"
+            android:layout_width="match_parent"
+            android:layout_height="6dip"
+            android:layout_below="@+id/textViewNameOfApplicant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewApplicationId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_name_of_applicant_counsellingStatus"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_below_name_of_applicant"
+            android:layout_width="match_parent"
+            android:layout_height="6dip"
+            android:layout_below="@+id/textViewApplicationId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewPreferredBranchStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_name_of_applicant"
+            android:layout_centerHorizontal="true"
+            android:text="Your Preferred Branch Status"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_below_preferred_branch_status"
+            android:layout_width="320dp"
+            android:layout_height="6dip"
+            android:layout_below="@+id/textViewPreferredBranchStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/black" />
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout_counsellingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_preferred_branch_status"
+            android:layout_centerHorizontal="true"
+            android:weightSum="10">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="S. No."
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Preferred Branches"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Seat Status"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/cell_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="CSE"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Confirmed"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/cell_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="2"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="MME"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="WL-2"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/cell_31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="3"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="5"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="CCE"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/cell_33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="3"
+                    android:background="@drawable/border_cell"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="WL-19"
+                    android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:id="@+id/line_below_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="6dip"
+            android:layout_below="@+id/tableLayout_counsellingStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewRoundStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_table_layout"
+            android:layout_centerHorizontal="true"
+            android:text="Updates"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line_below_round_status"
+            android:layout_width="320dp"
+            android:layout_height="6dip"
+            android:layout_below="@+id/textViewRoundStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewUpdates_counsellingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_round_status"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="Your CCE waitlist has been upgraded to seat 13"
+            android:textAppearance="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

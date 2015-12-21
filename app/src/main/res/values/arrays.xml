@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_menu_items">
+        <item>Category</item>
+        <item>Counselling Status</item>
+        <item>Student Info</item>
+        <item>Fee Status</item>
+        <item>One Touch Call Support</item>
+        <item>FeedBack</item>
+        <!--
+        <item>update</item>
+        <item>Done</item>
+        -->
+        <!--
+        <item>Category</item>
+        <item>Settings</item>
+        <item>Add</item>
+        <item>Discard</item>
+        <item>Category</item>
+        <item>Maps</item>
+        <item>Share</item>
+        -->
+    </string-array>
+</resources>
