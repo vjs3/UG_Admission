@@ -23,7 +23,7 @@ import com.vishwajeets3.loginregistration.app.AppConfig;
 import com.vishwajeets3.loginregistration.app.AppController;
 import com.vishwajeets3.loginregistration.helper.SQLiteHandler;
 import com.vishwajeets3.loginregistration.helper.SessionManager;
-import com.vishwajeets3.loginregistration.navigationliveo.NavigationMain;
+import com.vishwajeets3.loginregistration.NavigationClasses.NavigationMain;
 
 import java.util.HashMap;
 import java.util.Map;

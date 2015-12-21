@@ -1,16 +1,13 @@
 
-package com.vishwajeets3.loginregistration.navigationliveo;
+package com.vishwajeets3.loginregistration.NavigationClasses;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.util.SparseIntArray;
@@ -21,13 +18,10 @@ import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.vishwajeets3.loginregistration.R;
 import com.vishwajeets3.loginregistration.adapter.NavigationAdapter;
 import com.vishwajeets3.loginregistration.fragments.CounsellingStatusFragment;
-import com.vishwajeets3.loginregistration.fragments.DownloadFragment;
-import com.vishwajeets3.loginregistration.fragments.RouteFragment;
 import com.vishwajeets3.loginregistration.fragments.StudentInfoFragment;
 import com.vishwajeets3.loginregistration.fragments.FeeStatusFragment;
 import com.vishwajeets3.loginregistration.utils.Constant;

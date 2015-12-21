@@ -15,6 +15,7 @@ import java.util.HashMap;
 
 public class MainActivity extends Activity {
 
+    //Basic widget Declaration
     private TextView txtName;
     private TextView txtEmail;
     private Button btnLogout;

@@ -1,4 +1,4 @@
-package com.vishwajeets3.loginregistration.navigationliveo;
+package com.vishwajeets3.loginregistration.NavigationClasses;
 
 import android.content.Context;
 import android.util.SparseIntArray;
