@@ -1,4 +1,6 @@
 # UG_Admission
+This is the android application for the counselling process of any engineering college in India.It is noteworthy that I have used all the data and functionality corresponding to my college's(LNMIIT, Jaipur) counselling process.<br>
+
 This android application helps both students who are applying for admission as well as councelling committee which is conducting the admission process by providing different interfaces to both.<br>
 <strong>Feature for Applicants :</strong><br> 
 1.They can see their counselling status on the go without hussling to open website every time to see their status.<br>
